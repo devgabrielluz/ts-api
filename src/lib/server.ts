@@ -1,10 +1,10 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import routes from './routes';
+import routes from '../routes';
 
-import './config';
-import { errorHandler } from './middlewares/errorHandler';
+import database from './config';
+import { errorHandler } from '../middlewares/errorHandler';
 
 import { createServer } from "http";
 import { Server } from "socket.io";
